@@ -1,0 +1,688 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<link href="lib/materialize/css/materialize.min.css" rel="stylesheet" />
+	<link href="lib/material-design-icons/css/materialdesignicons.min.css" rel="stylesheet" />
+	<link href="style.css" rel="stylesheet" />
+</head>
+<body>
+	<div class="navbar-fixed">
+		<nav class="blue">
+			<div class="nav-wrapper container">
+				<a href="#!" class="brand-logo">Dodir mira</a>
+				<a href="#" data-activates="mobile-demo" class="button-collapse"><i class="mdi mdi-menu"></i></a>
+				<ul class="right hide-on-med-and-down">
+					<li><a href="/#about">O meni</a></li>
+					<!--<li><a href="/#training">Obuka</a></li>-->
+					<li><a href="/#massages">Masaže</a></li>
+					<li><a href="/#gallery">Galerija</a></li>
+					<li><a href="/#pricing">Cenovnik</a></li>
+					<li><a href="/#contact">Kontakt</a></li>
+					<li><a class="waves-effect waves-light btn amber modal-trigger" href="#buy-modal" onclick="buyModalOpen()">rezerviši</a></li>
+				</ul>
+				<ul class="side-nav" id="mobile-demo">
+					<li><a href="/#about">O meni</a></li>
+					<!--<li><a href="/#training">Obuka</a></li>-->
+					<li><a href="/#massages">Masaže</a></li>
+					<li><a href="/#gallery">Galerija</a></li>
+					<li><a href="/#pricing">Cenovnik</a></li>
+					<li><a href="/#contact">Kontakt</a></li>
+					<li><a class="waves-effect waves-light btn amber modal-trigger" href="#buy-modal">rezerviši</a></li>
+				</ul>
+			</div>
+		</nav>
+	</div>
+
+	<div class="parallax-container">
+		<div class="parallax">
+			<img src="images/header-background.jpg" />
+		</div>
+	</div>
+
+	<div id="promotions" class="container">
+		<div class="card break-edge">
+			<div class="card-image">
+				<div class="slider">
+					<ul class="slides">
+						<li>
+							<img src="images/gallery/IMG_9418%2003.jpg" />
+							<div class="caption left-align">
+								<h3>Za parove</h3>
+								<h5 class="light grey-text text-lighten-3">Požurite i iskoristite akciju "Za parove", dvoje po ceni jednog. Akcija traje do 31. jula.</h5>
+								<div style="width: 100%; text-align: right;">
+									<button class="waves-effect waves-yellow transparent amber-text btn-flat">rezerviši</button>
+								</div>
+							</div>
+						</li>
+						<li>
+							<img src="images/gallery/IMG_9418%2003.jpg" />
+							<div class="caption left-align">
+								<h3>Za redovne</h3>
+								<h5 class="light grey-text text-lighten-3">Stalna akcija. Za sve redovne klijente popust 10-20%. Pozovite za više informacija.</h5>
+							</div>
+						</li>
+						<li>
+							<img src="images/gallery/IMG_9418%2003.jpg" />
+							<div class="caption left-align">
+								<h3>Paket</h3>
+								<h5 class="light grey-text text-lighten-3">Za najbolji efekat je preporučeno da uradite minimum četiri tretmana. Iskoristite akcijiski paket od četiri tretmana po ceni tri.</h5>
+								<div style="width: 100%; text-align: right;">
+									<button class="waves-effect waves-yellow transparent amber-text btn-flat">rezerviši</button>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<div id="about">
+			<div class="card medium blue white-text">
+				<img src="images/stefan.png" alt="stefan" class="left responsive-img stefan" />
+				<div class="card-content">
+					<h2 class="card-title" style="margin-top: 0;">Upoznajte terapeuta</h2>
+					<p>Zdravo, ja sam Stefan Aleksić, profesionalni terapeut masaže.</p>
+					<br />
+					<p>
+						Bavljenje masažom mi pruža zadovoljstvo što mogu da pomognem ljudima da žive život punim plućima. 
+						Masaža obnavlja i podmlađuje um, telo i duh a takodje pruža i olakšanje i ozdravljenje stresiranom telu ili mišićnoj grupi. 
+						Istraživanja pokazuju da je stres glavni uzrok bolesti. Moja preporuka svakome je da uradi tretman masaže barem jednom mesečno. 
+						Zbog toga sam i osmislio <a href="#massages" class="white-text" style="font-style: italic;">New Age Relief</a> masažu. Ova masaža je odlično rešenje
+						za zauzete ljude a i cenovno je pristupačna kako bi bila dostupna što većem broju ljudi.
+					</p>
+					<br />
+					<p>Unapred se radujem što mogu da vam pomognem da budete najzdraviji mogući.</p>
+					<br />
+					<p>Želim vam puno lepih masaža!</p>
+				</div>
+			</div>
+		</div>
+
+		<!--<div id="training">
+			<div class="card">
+				<div class="card-image">
+					<img src="images/gallery/Peskiri i svece 002.jpg" alt="obuka" class="responsive-img" />
+					<h2 class="card-title">Obuka za parove</h2>
+				</div>
+				<div class="card-content">
+					<blockquote class="row">
+						<div class="col s12 m4 offset-m1">
+							<i class="mdi mdi-format-quote mdi-24px blue-text"></i>
+							Kada masirate nekoga, nivo oksitocina u mozgu raste, a oksitocin je jedan od hormona koji produbljuju vezu.
+						<p class="right-align grey-text cite">Dr Helen Fišer</p>
+						</div>
+					</blockquote>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dignissim nec diam sit amet lobortis. Cras a tortor a ligula vulputate maximus. Nam semper, ligula et fringilla gravida, sem velit consectetur ligula, eu congue turpis odio et lectus. Vestibulum hendrerit ex at est bibendum efficitur. Ut augue est, volutpat ut nisi non, porttitor mollis leo. Integer lacinia neque et pulvinar consequat. Phasellus eget lorem at risus mollis lobortis a at lacus. Cras mattis nisl et pulvinar tristique. Pellentesque ultricies nisl ut enim vestibulum, pellentesque varius ante sagittis. In quis felis nisl. Pellentesque bibendum pulvinar elementum. Pellentesque scelerisque nisl massa, non.
+					</p>
+				</div>
+				<div class="card-content center-align">
+					<span class="price blue-text">3.000</span>&nbsp;<span class="currency">din.</span>
+				</div>
+				<div class="card-action right-align">
+					<button class="waves-effect waves-yellow btn-flat white amber-text">rezerviši<i class="mdi mdi-send right"></i></button>
+				</div>
+			</div>
+		</div>-->
+
+		<div id="massages">
+			<div class="card">
+				<div class="card-content">
+					<h2 class="card-title">Masaže</h2>
+					<blockquote class="row">
+						<div class="col s12 m4 offset-m1">
+							<i class="mdi mdi-format-quote mdi-24px blue-text"></i>
+							Naša je obaveza da održavamo telo u dobrom stanju, inače nećemo moći da zadržimo jak i čist um.
+						<p class="right-align grey-text cite">Buda</p>
+						</div>
+					</blockquote>
+				</div>
+				<div class="card-content">
+					<div class="section">
+						<div class="row">
+							<div class="col m8">
+								<h5 class="subtitle">New Age Relief</h5>
+								<p>
+									Stres, povišen krvni pritisak, bol u vratu i leđima su tegobe modernog doba. New Age Relief je namenjen umanjenju i otklanjanju ovih problema, ne oduzima puno vremena i posebno je prilagođen ljudima koji se bave sedećim poslom.
+								</p>
+								<br />
+								<p>
+									​New Age Relief predstavlja savršenu kombinaciju relaks, antistres i terapeutske masaže. Sastoji od masaže leđa, vrata, glave i dlanova u trajanju od 45 minuta.
+								</p>
+							</div>
+							<div class="col m4">
+								<img src="images/gallery/IMG_9418%2003.jpg" class="responsive-img" />
+							</div>
+						</div>
+					</div>
+					<div class="divider"></div>
+					<div class="section">
+						<div class="row">
+							<div class="col m4">
+								<img src="images/gallery/IMG_9418%2003.jpg" class="responsive-img" />
+							</div>
+							<div class="col m8">
+								<h5 class="subtitle">Švedska</h5>
+								<p>
+									Relaksirajuća i umirujuća masaža, namenjena smanjenju stresa i tenzije, opuštanju umornih mišića, poboljšanju cirkulacije i vraćanju emocija u ravnotežu.
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="divider"></div>
+					<div class="section">
+						<div class="row">
+							<div class="col m8">
+								<h5 class="subtitle">Terapeutska</h5>
+								<p>
+									Intenzivna tehnika idealna za opuštanje bolnih ukočenih mišića. Odlikuje je jači pritisak kako bi se tretirala dublja mišićna tkiva što pomaže da se ublaži hronični ili akutni bol u mišićima. Poboljšava cirkulaciju krvi što dovodi do bržeg oslobadjanja toksina.
+								</p>
+							</div>
+							<div class="col m4">
+								<img src="images/gallery/IMG_9418%2003.jpg" class="responsive-img" />
+							</div>
+						</div>
+					</div>
+					<div class="divider"></div>
+					<div class="section">
+						<div class="row">
+							<div class="col m4">
+								<img src="images/gallery/IMG_9418%2003.jpg" class="responsive-img" />
+							</div>
+							<div class="col m8">
+								<h5 class="subtitle">Ayurveda</h5>
+								<p>
+									Stara indijska tehnika masaže pruža kompletnu terapiju tela, uma i duha. U toku tretmana se tradicionalno koriste aromatična ulja što dovodi do dubokog opuštanja zbog čega će vam vaše telo biti zahvalno.
+								</p>
+								<p>
+									U toku Ayurveda masaže tretiraju se vitalne tačke celog tela što podstiče detoksifikaciju tela i poboljšanju protoka energije.
+									Takodje se poboljšava protok limfnih kanala i jača imuni sistem i istovremeno opušta i jača nervni sistem.
+								</p>
+								<p>
+									Ako se osećate nervozno ili patite od lošeg sna, aromatična ulja pomažu opuštanju uma i nervnog sistema što vas čini opuštenim, odmornim i smirenim a u isto vreme koncentrisanijim.
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="divider"></div>
+					<div class="section">
+						<div class="row">
+							<div class="col m8">
+								<h5 class="subtitle">Sportska</h5>
+								<p>
+									Namenjena je kako profesionalnim atletičarima tako i svima koji vode aktivan život. Fokus je na povećanju protoka krvi, zagrevanju i opuštanju mišića, kao i stimulisanju cirkulacije. Ovo će povećati snabdevanje mišića hranljivim materijama i kiseonikom što direktno dovodi do boljih preformansi. Ukoliko se masaža vrši posle dogadjaja, fokus je na uklanjanju toksina iz tela i ubrzanju procesa oporavka.
+								</p>
+							</div>
+							<div class="col m4">
+								<img src="images/gallery/IMG_9418%2003.jpg" class="responsive-img" />
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="gallery">
+			<div class="card">
+				<div class="card-content">
+					<h2 class="card-title">Galerija</h2>
+				</div>
+				<div class="card-content">
+					<div class="row">
+						<div class="col m3">
+							<img src="images/gallery/IMG_9418%2003.jpg" class="content materialboxed" />
+						</div>
+						<div class="col m3">
+							<img src="images/gallery/IMG_9433%2003.jpg" class="content materialboxed" />
+						</div>
+						<div class="col m3">
+							<img src="images/gallery/IMG_9522%2005.jpg" class="content materialboxed" />
+						</div>
+						<div class="col m3">
+							<img src="images/gallery/Peskiri%20i%20svece%20002.jpg" class="content materialboxed" />
+						</div>
+					</div>
+					<div class="row">
+						<div class="col m3">
+							<img src="images/gallery/Peskiri%20i%20svece%20003.jpg" class="content materialboxed" />
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="testimonials" class="card">
+			<div class="card-content">
+				<h2 class="card-title">Utisci</h2>
+				<div class="slider">
+					<ul class="slides center-align">
+						<li>
+							<div class="caption center-align">
+								<img src="http://lorempixel.com/128/128/people" class="circle avatar"><br />
+								<span class="amber-text">
+									<i class="mdi mdi-24px mdi-star"></i>
+									<i class="mdi mdi-24px mdi-star"></i>
+									<i class="mdi mdi-24px mdi-star"></i>
+									<i class="mdi mdi-24px mdi-star"></i>
+									<i class="mdi mdi-24px mdi-star-half"></i>
+								</span>
+								<br />
+								<span><i class="mdi mdi-format-quote mdi-24px blue-text"></i>&nbsp;Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span><br />
+								<span class="name">Marko Aleksic</span><br />
+								<span class="grey-text">Programer</span>
+							</div>
+						</li>
+						<li>
+							<div class="caption center-align">
+								<img src="http://lorempixel.com/128/128/people" class="circle avatar"><br />
+								<span class="amber-text">
+									<i class="mdi mdi-24px mdi-star"></i>
+									<i class="mdi mdi-24px mdi-star"></i>
+									<i class="mdi mdi-24px mdi-star"></i>
+									<i class="mdi mdi-24px mdi-star"></i>
+									<i class="mdi mdi-24px mdi-star-outline"></i>
+								</span>
+								<br />
+								<span><i class="mdi mdi-format-quote mdi-24px blue-text"></i>&nbsp;Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span><br />
+								<span class="name">Marko Aleksic</span><br />
+								<span class="grey-text">Programer</span>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<div id="pricing">
+			<div class="card">
+				<div class="card-content">
+					<h2 class="card-title">Cenovnik masaža</h2>
+					<div class="row">
+						<div class="col s6 m2 offset-m1">
+							<div class="section center-align title">
+								<h5 class="name"><a href="/#massages">New Age Relief</a></h5>
+							</div>
+							<div class="divider"></div>
+							<div class="section col s12 m12 center-align">
+								<h5>45 min</h5>
+								<h3 class="price blue-text">1.000</h3>
+								<span class="currency">din.</span>
+							</div>
+						</div>
+						<div class="col s6 m2">
+							<div class="section center-align title">
+								<h5 class="name valign-center"><a href="/#massages">Švedska</a></h5>
+							</div>
+							<div class="divider"></div>
+							<div class="section col s12 m12 center-align">
+								<h5>60 min</h5>
+								<h3 class="price blue-text">1.300</h3>
+								<span class="currency">din.</span>
+							</div>
+						</div>
+						<div class="col s6 m2">
+							<div class="section center-align title">
+								<h5 class="name valign-center"><a href="/#massages">Terapeutska</a></h5>
+							</div>
+							<div class="divider"></div>
+							<div class="section col s12 m12 center-align">
+								<h5>60 min</h5>
+								<h3 class="price blue-text">1.300</h3>
+								<span class="currency">din.</span>
+							</div>
+						</div>
+						<div class="col s6 m2">
+							<div class="section center-align title">
+								<h5 class="name valign-center"><a href="/#massages">Ayurveda</a></h5>
+							</div>
+							<div class="divider"></div>
+							<div class="section col s12 m12 center-align">
+								<h5>90 min</h5>
+								<h3 class="price blue-text">1.800</h3>
+								<span class="currency">din.</span>
+							</div>
+						</div>
+						<div class="col s6 m2">
+							<div class="section center-align title">
+								<h5 class="name valign-center"><a href="/#massages">Sportska</a></h5>
+							</div>
+							<div class="divider"></div>
+							<div class="section col s12 m12 center-align">
+								<h5>60 min</h5>
+								<h3 class="price blue-text">1.300</h3>
+								<span class="currency">din.</span>
+							</div>
+						</div>
+					</div>
+					<div class="row" style="padding-top: 40px;">
+						<div class="col s6 offset-s3 m4 offset-m4">
+							<a class="btn waves-effect waves-light amber modal-trigger" style="width: 100%;" href="#buy-modal" onclick="buyModalOpen()">rezerviši
+								<i class="mdi mdi-send right"></i>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="contact">
+			<div class="card">
+				<div class="card-content">
+					<h2 class="card-title">Kontakt</h2>
+				</div>
+				<div class="card-content">
+					<div class="row">
+						<div class="col s12 m5 offset-m1 center-align">
+							<i class="mdi mdi-phone mdi-36px blue-text"></i>
+							<br />
+							<h5 class="phone">+381 62 14 22 472</h5>
+						</div>
+						<div class="col s12 m5 center-align">
+							<i class="mdi mdi-map-marker mdi-36px blue-text"></i>
+							<h5 class="street">Bul. Mihajla Pupina 139/61</h5>
+							<h5 class="city">Beograd</h5>
+						</div>
+					</div>
+				</div>
+				<div class="card-image">
+					<div id="map" style="height: 400px;"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<footer class="page-footer blue">
+		<div class="footer-copyright">
+			<div class="container">
+				<span class="grey-text text-lighten-4">© 2016 miramentis</span>
+				<a href="http://facebook.com/dodirmira" target="_blank" class="grey-text text-lighten-4 right"><i class="mdi mdi-facebook-box mdi-24px"></i></a>
+			</div>
+		</div>
+	</footer>
+
+	<div id="buy-modal" class="modal modal-fixed-footer">
+		<div id="buy-form">
+			<div class="modal-content">
+				<h5>Rezerviši termin<i class="mdi mdi-close right modal-close"></i></h5>
+				<div class="row" style="margin-bottom: 0;">
+					<form class="s12">
+						<span id="terms-left" class="red-text"></span>
+						<br /><br />
+						<span id="buy-error" class="red-text"></span>
+						<div class="row small-bottom-margin">
+							<!--<div id="massage" class="input-field col s12 m6">
+								<select required onchange="massageChange()">
+									<option value="" disabled selected>Masaža</option>
+									<option value="newage">New Age Relief</option>
+									<option value="svedska">Švedska</option>
+									<option value="terapeutska">Terapeutska</option>
+									<option value="ayurveda">Ayurveda</option>
+									<option value="Sportska">Sportska</option>
+								</select>
+							</div>-->
+							<div class="input-field col s12 m6">
+								<input id="date" type="date" class="datepicker" required />
+								<label for="date">Datum</label>
+							</div>
+							<div id="hour" class="input-field col s12 m4">
+								<select required>
+									<option value="" disabled selected>Vreme</option>
+									<option value="8">08:00</option>
+									<option value="9">09:00</option>
+									<option value="10">10:00</option>
+									<option value="11">11:00</option>
+									<option value="12">12:00</option>
+									<option value="13">13:00</option>
+									<option value="14">14:00</option>
+									<option value="15">15:00</option>
+									<option value="16">16:00</option>
+									<option value="17">17:00</option>
+									<option value="18">18:00</option>
+									<option value="19">19:00</option>
+									<option value="20">20:00</option>
+									<option value="21">21:00</option>
+								</select>
+							</div>
+						</div>
+						<div class="row small-bottom-margin">
+							<div class="input-field col s12 m12">
+								<input id="fullname" type="text" class="validate" required />
+								<label for="fullname">Ime i prezime</label>
+							</div>
+						</div>
+						<div class="row" style="margin-bottom: 15px;">
+							<div class="input-field col s12 m6">
+								<input id="phone" type="text" class="validate" required />
+								<label for="phone">Broj telefona</label>
+							</div>
+							<div class="input-field col s12 m6">
+								<input id="email" type="email" class="validate" required />
+								<label for="email">Email</label>
+							</div>
+						</div>
+						<!--<div class="row" style="margin-bottom: 0;">
+							<div class="col s12 right-align">
+								<span class="currency">Iznos:</span> <span id="buy-form-price" class="price blue-text">0.0</span> <span class="currency">din.</span>
+							</div>
+						</div>-->
+					</form>
+				</div>
+			</div>
+			<div class="modal-footer">
+				<button class="modal-action waves-effect transparent blue-text btn-flat" onclick="buy()">rezerviši<i class="mdi mdi-send right"></i></button>
+				<button class="modal-action modal-close waves-effect transparent btn-flat">Otkaži</button>
+			</div>
+		</div>
+
+		<div id="thank-you" style="display: none;">
+			<div class="modal-content">
+				<h5><i class="mdi mdi-close right modal-close"></i></h5>
+				<div class="center-align" style="margin-top: 72px;">
+					<i class="mdi mdi-checkbox-marked-circle-outline green-text" style="font-size: 144px; margin-bottom: 16px;"></i>
+					<h5>Hvala Vam!</h5>
+					<h6>Uspešno ste izvršili rezervaciju.</h6>
+					<p>Uskoro ćemo Vas pozvati kako bismo potvrdili rezervaciju.</p>
+				</div>
+			</div>
+			<div class="modal-footer">
+				<button class="modal-action modal-close waves-effect transparent blue-text btn-flat">ok</button>
+			</div>
+		</div>
+	</div>
+
+	<iframe id="reserve" src="" style="display: none;"></iframe>
+
+	<script src="lib/jquery-2.2.3/jquery.min.js"></script>
+	<script src="lib/materialize/js/materialize.min.js"></script>
+
+	<script>
+		function setCookie(cname, cvalue) {
+			var d = new Date();
+			d.setTime(d.getTime() + (60 * 60 * 1000));
+			var expires = "expires=" + d.toUTCString();
+			document.cookie = cname + "=" + cvalue + "; " + expires;
+		}
+
+		function getCookie(cname) {
+			var name = cname + "=";
+			var ca = document.cookie.split(';');
+			for (var i = 0; i < ca.length; i++) {
+				var c = ca[i];
+				while (c.charAt(0) == ' ') {
+					c = c.substring(1);
+				}
+				if (c.indexOf(name) == 0) {
+					return c.substring(name.length, c.length);
+				}
+			}
+			return "";
+		}
+
+
+		var terms = getCookie('terms');
+		var rndTerms = 0;
+		if (terms != "")
+			rndTerms = terms;
+		else {
+			rndTerms = Math.floor((Math.random() * 11) + 5);
+			setCookie('terms', rndTerms);
+		}
+
+		jQuery(document).ready(function () {
+			jQuery(".button-collapse").sideNav();
+			jQuery('.parallax').parallax();
+			jQuery('.materialboxed').materialbox();
+			jQuery('ul.tabs').tabs();
+			jQuery('.slider').slider();
+			jQuery('.modal-trigger').leanModal({
+				dismissible: false
+			});
+			jQuery('select').material_select();
+			$('.datepicker').pickadate({
+				selectMonths: false,
+				selectYears: 1
+			});
+
+			setTimeout(function () {
+				var rnd = Math.floor((Math.random() * 9) + 2);
+				var plural = rnd < 5 ? 'osobe' : 'osoba';
+
+				Materialize.toast(rnd + ' ' + plural + ' trenutno gledaju ovo', 4000, 'amber');
+			}, 4000);
+
+			if (terms == "") {
+				setTimeout(function () {
+					Materialize.toast('Jedna osoba je upravo rezervisala termin', 8000, 'amber');
+				}, 12000);
+			}
+
+			jQuery('#terms-left').html('Ostalo je jos samo <strong>' + rndTerms + '</strong> termina ove nedelje');
+		});
+
+		function buyModalOpen() {
+			jQuery("#buy-form").css("display", "");
+			jQuery("#thank-you").css("display", "none");
+			jQuery("#buy-error").css("display", "none");
+
+			setTimeout(function () {
+				var termsLeft = jQuery('#terms-left');
+				var trmCnt = terms == "" ? rndTerms - 1 : rndTerms;
+				termsLeft.html('Ostalo je jos samo <strong>' + trmCnt + '</strong> termina ove nedelje');
+				for (var i = 0; i < 3; i++) {
+					termsLeft.animate({ opacity: '0.38' }, 'slow');
+					termsLeft.animate({ opacity: '1' }, 'slow');
+				}
+			}, 4000);
+		}
+
+		function buy() {
+			var date = jQuery('#date').val().trim();
+			var time = jQuery('#hour .active span').html().trim();
+			var fullname = jQuery('#fullname').val().trim();
+			var phone = jQuery('#phone').val().trim();
+			var email = jQuery('#email').val().trim();
+
+			if (
+				!date || date == ""
+				|| !time || time == ""
+				|| !fullname || fullname == ""
+				|| !phone || phone == ""
+				|| !email || email == ""
+			) {
+				var buyError = jQuery("#buy-error");
+				buyError.html("Morate popuniti sva polja.");
+				buyError.css('display', 'inline');
+				return;
+			}
+
+			var reserveUrl = 'http://dodirmira.byethost10.com/reserve.php';
+			reserveUrl += '?date=' + date + '&time=' + time + '&fullname=' + fullname + '&phone=' + phone + '&email=' + email;
+
+			jQuery('#reserve').attr('src', reserveUrl);
+
+			rndTerms = rndTerms - 1;
+			setCookie("terms", rndTerms);
+
+			jQuery("#buy-form").css("display", "none");
+			jQuery("#thank-you").css("display", "");
+		}
+
+		function massageChange() {
+			var massage = jQuery("#massage input[type='text']").val();
+
+			switch (massage.toLowerCase()) {
+				case 'new age relief':
+					jQuery("#buy-form-price").html("1.000");
+					break;
+				case 'švedska':
+				case 'terapeutska':
+				case 'sportska':
+					jQuery("#buy-form-price").html("1.300");
+					break;
+				case 'ayurveda':
+					jQuery("#buy-form-price").html("1.800");
+					break;
+				default:
+					jQuery("#buy-form-price").html("0.0");
+					break;
+			}
+		}
+
+		function initMap() {
+			var pos = { lat: 44.8203675, lng: 20.4199868 };
+			var mapDiv = document.getElementById('map');
+			var map = new google.maps.Map(mapDiv, {
+				center: pos,
+				zoom: 17,
+				streetViewControl: false,
+				scrollwheel: false
+			});
+			var marker = new google.maps.Marker({
+				position: pos,
+				map: map,
+				title: 'Dodir mira',
+				animation: google.maps.Animation.DROP
+			});
+		}
+
+		window.onresize = function () {
+			initMap();
+		};
+	</script>
+
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAZHyRy2JVIWhUzuZ4gyQhYALiv6_o7KdA&callback=initMap" async defer></script>
+
+	<script type='text/javascript' src="http://cdnjs.cloudflare.com/ajax/libs/jquery-ajaxtransport-xdomainrequest/1.0.1/jquery.xdomainrequest.min.js"></script>
+
+	<!-- Smartsupp Live Chat script -->
+	<script type="text/javascript">
+		var _smartsupp = _smartsupp || {};
+		_smartsupp.key = '0b0c8963ec8e2cec86be95b00c8129dd5f1f4a1d';
+		window.smartsupp || (function (d) {
+			var s, c, o = smartsupp = function () { o._.push(arguments) }; o._ = [];
+			s = d.getElementsByTagName('script')[0]; c = d.createElement('script');
+			c.type = 'text/javascript'; c.charset = 'utf-8'; c.async = true;
+			c.src = '//www.smartsuppchat.com/loader.js?'; s.parentNode.insertBefore(c, s);
+		})(document);
+	</script>
+
+	<!--Google Analytics script-->
+	<script>
+		(function (i, s, o, g, r, a, m) {
+			i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+				(i[r].q = i[r].q || []).push(arguments)
+			}, i[r].l = 1 * new Date(); a = s.createElement(o),
+			m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+		})(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+		ga('create', 'UA-80892385-1', 'auto');
+		ga('send', 'pageview');
+	</script>
+
+</body>
+</html>

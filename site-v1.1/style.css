@@ -1,0 +1,234 @@
+﻿#about .card {
+	overflow: hidden;
+}
+
+#about img.stefan {
+	float: left;
+	max-width: 50%;
+}
+
+#about .card-content {
+	max-height: 100%;
+	overflow-y: auto;
+}
+
+.card.break-edge {
+	margin-top: -484px;
+}
+
+#training .card-image {
+	height: 300px;
+	overflow: hidden;
+}
+
+#gallery .col {
+	position: relative;
+	overflow: hidden;
+}
+
+	#gallery .col.m3 {
+		width: 25%;
+	}
+
+	#gallery .col::after {
+		content: "";
+		display: block;
+		padding-bottom: 100%;
+	}
+
+	#gallery .col .content {
+		position: absolute;
+		width: auto;
+		height: 100%;
+	}
+
+#pricing .name {
+	font-size: 1.16rem;
+	font-weight: 300;
+	display: inline;
+	padding-left: 0.5rem;
+	padding-right: 0.5rem;
+}
+
+	#pricing .name a {
+		color: rgba(0,0,0,0.87);
+	}
+
+		#pricing .name a:hover {
+			color: #2196F3 !important;
+		}
+
+#pricing .section.title {
+	padding-top: 3.48rem;
+	padding-bottom: 2.32rem;
+}
+
+.price {
+	font-size: 2.33rem;
+	font-weight: 300;
+	margin-bottom: 0;
+	line-height: 110%;
+	margin: 1.46rem 0 0 0;
+}
+
+.currency {
+	font-size: 1.1rem;
+}
+
+.brand-logo {
+	font-weight: 200;
+	font-family: HavanaRounded, "Roboto", sans-serif;
+	letter-spacing: 0.1rem;
+	font-size: 1.8rem;
+}
+
+#contact .phone {
+	font-weight: 300;
+}
+
+#contact .street {
+	font-weight: 300;
+}
+
+#contact .city {
+	font-size: 1.32rem;
+}
+
+.tabs .tab a {
+	color: #2196F3;
+}
+
+	.tabs .tab a:hover {
+		color: rgba(33, 150, 243, 0.38);
+	}
+
+.tabs .indicator {
+	background-color: #1E88E5;
+}
+
+#massages .subtitle {
+	margin-top: 0;
+	font-weight: 300;
+	font-size: 20px;
+}
+
+blockquote {
+	border-left: none;
+	max-width: 75%;
+}
+
+	blockquote .cite {
+		font-style: italic;
+	}
+
+#promotions .indicators {
+	display: none;
+}
+
+#promotions .slider {
+	height: 400px !important;
+}
+
+#testimonials .slider {
+	height: 248px !important;
+}
+
+#testimonials .slides {
+	height: 224px !important;
+	background-color: transparent;
+}
+
+#testimonials .indicators {
+	display: block;
+}
+
+#testimonials .indicator-item.active {
+	background-color: #2196F3 !important;
+}
+
+#testimonials .caption {
+	color: #000000 !important;
+}
+
+#testimonials .avatar {
+	width: 64px;
+	height: 64px;
+}
+
+#testimonials .name {
+	font-weight: 300;
+	font-size: 1.16rem;
+}
+
+#buy-modal.modal {
+	transform: none !important;
+	overflow-y: initial !important;
+}
+
+.picker__date-display {
+	background-color: #2196F3;
+}
+
+.picker__weekday-display {
+	background-color: #1976D2;
+}
+
+.picker__close, .picker__today {
+	color: #2196F3;
+}
+
+button.picker__today:focus, button.picker__clear:focus, button.picker__close:focus {
+	background-color: rgba(33, 150, 243, 0.38);
+}
+
+.picker__nav--prev:hover, .picker__nav--next:hover {
+	background-color: rgba(33, 150, 243, 0.38);
+}
+
+.picker__day.picker__day--today {
+	color: #2196F3;
+}
+
+.picker__day--selected, .picker__day--selected:hover, .picker--focused .picker__day--selected {
+	background-color: #2196F3;
+}
+
+.dropdown-content li > a, .dropdown-content li > span {
+	color: #2196F3;
+}
+
+input:not([type]):focus:not([readonly]), input[type=text]:focus:not([readonly]), input[type=password]:focus:not([readonly]), input[type=email]:focus:not([readonly]), input[type=url]:focus:not([readonly]), input[type=time]:focus:not([readonly]), input[type=date]:focus:not([readonly]), input[type=datetime]:focus:not([readonly]), input[type=datetime-local]:focus:not([readonly]), input[type=tel]:focus:not([readonly]), input[type=number]:focus:not([readonly]), input[type=search]:focus:not([readonly]), textarea.materialize-textarea:focus:not([readonly]) {
+	border-bottom: 1px solid #2196F3;
+	box-shadow: 0 1px 0 0 #2196F3;
+}
+
+	input:not([type]):focus:not([readonly]) + label, input[type=text]:focus:not([readonly]) + label, input[type=password]:focus:not([readonly]) + label, input[type=email]:focus:not([readonly]) + label, input[type=url]:focus:not([readonly]) + label, input[type=time]:focus:not([readonly]) + label, input[type=date]:focus:not([readonly]) + label, input[type=datetime]:focus:not([readonly]) + label, input[type=datetime-local]:focus:not([readonly]) + label, input[type=tel]:focus:not([readonly]) + label, input[type=number]:focus:not([readonly]) + label, input[type=search]:focus:not([readonly]) + label, textarea.materialize-textarea:focus:not([readonly]) + label {
+		color: #2196F3;
+	}
+
+#buy-modal .row.small-bottom-margin {
+	margin-bottom: 5px;
+}
+
+@media only screen and (min-width: 601px) {
+	#buy-modal .dropdown-content {
+		max-height: 250px !important;
+		position: fixed !important;
+		top: initial !important;
+		left: initial !important;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	#buy-modal .dropdown-content {
+		max-height: 250px !important;
+		position: fixed !important;
+		top: calc(50% - 125px) !important;
+		left: calc(50% - 150px) !important;
+	}
+}
+
+@font-face {
+	font-family: HavanaRounded;
+	src: url('fonts/Havana Rounded.ttf');
+}
