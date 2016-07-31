@@ -28,9 +28,10 @@
 
 	#gallery .col.m3 {
 		width: 25%;
+		margin-bottom: 1.5rem;
 	}
 
-	#gallery .col::after {
+	/*#gallery .col::after {
 		content: "";
 		display: block;
 		padding-bottom: 100%;
@@ -40,7 +41,7 @@
 		position: absolute;
 		width: auto;
 		height: 100%;
-	}
+	}*/
 
 #pricing .name {
 	font-size: 1.16rem;
