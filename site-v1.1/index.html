@@ -10,7 +10,7 @@
 	<link href="lib/material-design-icons/css/materialdesignicons.min.css" rel="stylesheet" />
 	<link href="style.css" rel="stylesheet" />
 </head>
-<body>
+<body style="background: transparent url('images/header-background.jpg') no-repeat fixed bottom;">
 	<div class="navbar-fixed">
 		<nav class="blue">
 			<div class="nav-wrapper container">
@@ -32,47 +32,41 @@
 					<li><a href="/#gallery">Galerija</a></li>
 					<li><a href="/#pricing">Cenovnik</a></li>
 					<li><a href="/#contact">Kontakt</a></li>
-					<li><a class="waves-effect waves-light btn amber modal-trigger" href="#buy-modal">rezerviši</a></li>
+					<li><a class="waves-effect waves-light btn amber modal-trigger" href="#buy-modal" onclick="buyModalOpen()">rezerviši</a></li>
 				</ul>
 			</div>
 		</nav>
 	</div>
 
-	<div class="parallax-container">
-		<div class="parallax">
-			<img src="images/header-background.jpg" />
-		</div>
-	</div>
-
 	<div id="promotions" class="container">
-		<div class="card break-edge">
+		<div class="card">
 			<div class="card-image">
 				<div class="slider">
 					<ul class="slides">
 						<li>
-							<img src="images/gallery/IMG_9418%2003.jpg" />
-							<div class="caption left-align">
-								<h3>Za parove</h3>
-								<h5 class="light grey-text text-lighten-3">Požurite i iskoristite akciju "Za parove", dvoje po ceni jednog. Akcija traje do 31. jula.</h5>
-								<div style="width: 100%; text-align: right;">
-									<button class="waves-effect waves-yellow transparent amber-text btn-flat">rezerviši</button>
-								</div>
-							</div>
-						</li>
-						<li>
-							<img src="images/gallery/IMG_9418%2003.jpg" />
+							<img src="images/promotions/za-redovne.jpg" />
 							<div class="caption left-align">
 								<h3>Za redovne</h3>
 								<h5 class="light grey-text text-lighten-3">Stalna akcija. Za sve redovne klijente popust 10-20%. Pozovite za više informacija.</h5>
 							</div>
 						</li>
 						<li>
-							<img src="images/gallery/IMG_9418%2003.jpg" />
+							<img src="images/promotions/massage.jpg" />
 							<div class="caption left-align">
 								<h3>Paket</h3>
 								<h5 class="light grey-text text-lighten-3">Za najbolji efekat je preporučeno da uradite minimum četiri tretmana. Iskoristite akcijiski paket od četiri tretmana po ceni tri.</h5>
 								<div style="width: 100%; text-align: right;">
-									<button class="waves-effect waves-yellow transparent amber-text btn-flat">rezerviši</button>
+									<a class="waves-effect waves-yellow transparent amber-text btn-flat modal-trigger" href="#buy-modal" onclick="buyModalOpen()">rezerviši</a>
+								</div>
+							</div>
+						</li>
+						<li>
+							<img src="images/promotions/couples-massage.jpg" />
+							<div class="caption left-align">
+								<h3>Za parove</h3>
+								<h5 class="light grey-text text-lighten-3">Požurite i iskoristite akciju "Za parove", dvoje po ceni jednog. Akcija traje do 31. avgusta.</h5>
+								<div style="margin-left: -2rem;">
+									<a class="waves-effect waves-yellow transparent amber-text btn-flat modal-trigger" href="#buy-modal" onclick="buyModalOpen()">rezerviši</a>
 								</div>
 							</div>
 						</li>
@@ -83,7 +77,7 @@
 
 		<div id="about">
 			<div class="card medium blue white-text">
-				<img src="images/stefan.png" alt="stefan" class="left responsive-img stefan" />
+				<img src="images/stefan.jpg" alt="stefan" class="left responsive-img stefan" />
 				<div class="card-content">
 					<h2 class="card-title" style="margin-top: 0;">Upoznajte terapeuta</h2>
 					<p>Zdravo, ja sam Stefan Aleksić, profesionalni terapeut masaže.</p>
@@ -145,6 +139,9 @@
 				<div class="card-content">
 					<div class="section">
 						<div class="row">
+							<div class="col m4">
+								<img src="images/massages/new-age.jpg" class="responsive-img" />
+							</div>
 							<div class="col m8">
 								<h5 class="subtitle">New Age Relief</h5>
 								<p>
@@ -155,45 +152,39 @@
 									​New Age Relief predstavlja savršenu kombinaciju relaks, antistres i terapeutske masaže. Sastoji od masaže leđa, vrata, glave i dlanova u trajanju od 45 minuta.
 								</p>
 							</div>
-							<div class="col m4">
-								<img src="images/gallery/IMG_9418%2003.jpg" class="responsive-img" />
-							</div>
 						</div>
 					</div>
 					<div class="divider"></div>
 					<div class="section">
 						<div class="row">
-							<div class="col m4">
-								<img src="images/gallery/IMG_9418%2003.jpg" class="responsive-img" />
-							</div>
 							<div class="col m8">
 								<h5 class="subtitle">Švedska</h5>
 								<p>
 									Relaksirajuća i umirujuća masaža, namenjena smanjenju stresa i tenzije, opuštanju umornih mišića, poboljšanju cirkulacije i vraćanju emocija u ravnotežu.
 								</p>
 							</div>
+							<div class="col m4">
+								<img src="images/massages/svedska.jpg" class="responsive-img" />
+							</div>
 						</div>
 					</div>
 					<div class="divider"></div>
 					<div class="section">
 						<div class="row">
+							<div class="col m4">
+								<img src="images/massages/terapeutska.jpg" class="responsive-img" />
+							</div>
 							<div class="col m8">
 								<h5 class="subtitle">Terapeutska</h5>
 								<p>
 									Intenzivna tehnika idealna za opuštanje bolnih ukočenih mišića. Odlikuje je jači pritisak kako bi se tretirala dublja mišićna tkiva što pomaže da se ublaži hronični ili akutni bol u mišićima. Poboljšava cirkulaciju krvi što dovodi do bržeg oslobadjanja toksina.
 								</p>
 							</div>
-							<div class="col m4">
-								<img src="images/gallery/IMG_9418%2003.jpg" class="responsive-img" />
-							</div>
 						</div>
 					</div>
 					<div class="divider"></div>
 					<div class="section">
 						<div class="row">
-							<div class="col m4">
-								<img src="images/gallery/IMG_9418%2003.jpg" class="responsive-img" />
-							</div>
 							<div class="col m8">
 								<h5 class="subtitle">Ayurveda</h5>
 								<p>
@@ -207,19 +198,23 @@
 									Ako se osećate nervozno ili patite od lošeg sna, aromatična ulja pomažu opuštanju uma i nervnog sistema što vas čini opuštenim, odmornim i smirenim a u isto vreme koncentrisanijim.
 								</p>
 							</div>
+							<div class="col m4">
+								<img src="images/massages/ayurveda.jpg" class="responsive-img" />
+							</div>
 						</div>
 					</div>
 					<div class="divider"></div>
 					<div class="section">
 						<div class="row">
+							<div class="col m4">
+								<img src="images/massages/sportska.jpg" class="responsive-img" />
+							</div>
 							<div class="col m8">
 								<h5 class="subtitle">Sportska</h5>
 								<p>
 									Namenjena je kako profesionalnim atletičarima tako i svima koji vode aktivan život. Fokus je na povećanju protoka krvi, zagrevanju i opuštanju mišića, kao i stimulisanju cirkulacije. Ovo će povećati snabdevanje mišića hranljivim materijama i kiseonikom što direktno dovodi do boljih preformansi. Ukoliko se masaža vrši posle dogadjaja, fokus je na uklanjanju toksina iz tela i ubrzanju procesa oporavka.
 								</p>
-							</div>
-							<div class="col m4">
-								<img src="images/gallery/IMG_9418%2003.jpg" class="responsive-img" />
+
 							</div>
 						</div>
 					</div>
@@ -235,21 +230,37 @@
 				<div class="card-content">
 					<div class="row">
 						<div class="col m3">
-							<img src="images/gallery/IMG_9418%2003.jpg" class="content materialboxed" />
+							<img src="images/gallery/1.jpg" class="content materialboxed responsive-img" />
 						</div>
 						<div class="col m3">
-							<img src="images/gallery/IMG_9433%2003.jpg" class="content materialboxed" />
+							<img src="images/gallery/2.jpg" class="content materialboxed responsive-img" />
 						</div>
 						<div class="col m3">
-							<img src="images/gallery/IMG_9522%2005.jpg" class="content materialboxed" />
+							<img src="images/gallery/3.jpg" class="content materialboxed responsive-img" />
 						</div>
 						<div class="col m3">
-							<img src="images/gallery/Peskiri%20i%20svece%20002.jpg" class="content materialboxed" />
+							<img src="images/gallery/4.jpg" class="content materialboxed responsive-img" />
 						</div>
-					</div>
-					<div class="row">
 						<div class="col m3">
-							<img src="images/gallery/Peskiri%20i%20svece%20003.jpg" class="content materialboxed" />
+							<img src="images/gallery/5.jpg" class="content materialboxed responsive-img" />
+						</div>
+						<div class="col m3">
+							<img src="images/gallery/6.jpg" class="content materialboxed responsive-img" />
+						</div>
+						<div class="col m3">
+							<img src="images/gallery/7.jpg" class="content materialboxed responsive-img" />
+						</div>
+						<div class="col m3">
+							<img src="images/gallery/8.jpg" class="content materialboxed responsive-img" />
+						</div>
+						<div class="col m3">
+							<img src="images/gallery/9.jpg" class="content materialboxed responsive-img" />
+						</div>
+						<div class="col m3">
+							<img src="images/gallery/10.jpg" class="content materialboxed responsive-img" />
+						</div>
+						<div class="col m3">
+							<img src="images/gallery/11.jpg" class="content materialboxed responsive-img" />
 						</div>
 					</div>
 				</div>
@@ -263,34 +274,44 @@
 					<ul class="slides center-align">
 						<li>
 							<div class="caption center-align">
-								<img src="http://lorempixel.com/128/128/people" class="circle avatar"><br />
+								<img src="images/testimonials/1.jpg" class="circle avatar"><br />
 								<span class="amber-text">
-									<i class="mdi mdi-24px mdi-star"></i>
-									<i class="mdi mdi-24px mdi-star"></i>
-									<i class="mdi mdi-24px mdi-star"></i>
-									<i class="mdi mdi-24px mdi-star"></i>
-									<i class="mdi mdi-24px mdi-star-half"></i>
+									<i class="mdi mdi-24px mdi-heart"></i>
+									<i class="mdi mdi-24px mdi-heart"></i>
+									<i class="mdi mdi-24px mdi-heart"></i>
 								</span>
 								<br />
-								<span><i class="mdi mdi-format-quote mdi-24px blue-text"></i>&nbsp;Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span><br />
-								<span class="name">Marko Aleksic</span><br />
-								<span class="grey-text">Programer</span>
+								<span><i class="mdi mdi-format-quote mdi-24px blue-text"></i>&nbsp;<b class="grey-text">Sjajno!</b> Uzeli smo paket New Age Relief masaže<br />
+									i bukvalno se preporodili.</span><br />
+								<span class="name">Ivana i Miloš</span><br />
 							</div>
 						</li>
 						<li>
 							<div class="caption center-align">
-								<img src="http://lorempixel.com/128/128/people" class="circle avatar"><br />
+								<img src="images/testimonials/2.jpg" class="circle avatar"><br />
 								<span class="amber-text">
-									<i class="mdi mdi-24px mdi-star"></i>
-									<i class="mdi mdi-24px mdi-star"></i>
-									<i class="mdi mdi-24px mdi-star"></i>
-									<i class="mdi mdi-24px mdi-star"></i>
-									<i class="mdi mdi-24px mdi-star-outline"></i>
+									<i class="mdi mdi-24px mdi-heart"></i>
+									<i class="mdi mdi-24px mdi-heart"></i>
+									<i class="mdi mdi-24px mdi-heart-outline"></i>
 								</span>
 								<br />
-								<span><i class="mdi mdi-format-quote mdi-24px blue-text"></i>&nbsp;Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span><br />
-								<span class="name">Marko Aleksic</span><br />
-								<span class="grey-text">Programer</span>
+								<span><i class="mdi mdi-format-quote mdi-24px blue-text"></i>&nbsp;<b class="grey-text">Sve preporuke!</b> Posle samo jednog tretmana<br />
+									ne osećam bol u leđima barem nedelju dana.</span><br />
+								<span class="name">Nemanja</span><br />
+							</div>
+						</li>
+						<li>
+							<div class="caption center-align">
+								<img src="images/testimonials/3.jpg" class="circle avatar"><br />
+								<span class="amber-text">
+									<i class="mdi mdi-24px mdi-heart"></i>
+									<i class="mdi mdi-24px mdi-heart"></i>
+									<i class="mdi mdi-24px mdi-heart"></i>
+								</span>
+								<br />
+								<span><i class="mdi mdi-format-quote mdi-24px blue-text"></i>&nbsp;<b class="grey-text">Odličan!</b> Stefan se maksimalno potrudio da za<br />
+									samo nekoliko tretmana bol u ledjima nestane.</span><br />
+								<span class="name">Marko</span><br />
 							</div>
 						</li>
 					</ul>
@@ -412,7 +433,8 @@
 				<div class="row" style="margin-bottom: 0;">
 					<form class="s12">
 						<span id="terms-left" class="red-text"></span>
-						<br /><br />
+						<br />
+						<br />
 						<span id="buy-error" class="red-text"></span>
 						<div class="row small-bottom-margin">
 							<!--<div id="massage" class="input-field col s12 m6">
@@ -581,18 +603,18 @@
 		}
 
 		function buy() {
-			var date = jQuery('#date').val().trim();
-			var time = jQuery('#hour .active span').html().trim();
-			var fullname = jQuery('#fullname').val().trim();
-			var phone = jQuery('#phone').val().trim();
-			var email = jQuery('#email').val().trim();
+			var date = jQuery('#date').val();
+			var time = jQuery('#hour .active span').html();
+			var fullname = jQuery('#fullname').val();
+			var phone = jQuery('#phone').val();
+			var email = jQuery('#email').val();
 
 			if (
-				!date || date == ""
-				|| !time || time == ""
-				|| !fullname || fullname == ""
-				|| !phone || phone == ""
-				|| !email || email == ""
+				!date || date.trim() == ""
+				|| !time || time.trim() == ""
+				|| !fullname || fullname.trim() == ""
+				|| !phone || phone.trim() == ""
+				|| !email || email.trim() == ""
 			) {
 				var buyError = jQuery("#buy-error");
 				buyError.html("Morate popuniti sva polja.");
@@ -601,7 +623,7 @@
 			}
 
 			var reserveUrl = 'http://dodirmira.byethost10.com/reserve.php';
-			reserveUrl += '?date=' + date + '&time=' + time + '&fullname=' + fullname + '&phone=' + phone + '&email=' + email;
+			reserveUrl += '?date=' + date.trim() + '&time=' + time.trim() + '&fullname=' + fullname.trim() + '&phone=' + phone.trim() + '&email=' + email.trim();
 
 			jQuery('#reserve').attr('src', reserveUrl);
 
@@ -657,9 +679,7 @@
 
 	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAZHyRy2JVIWhUzuZ4gyQhYALiv6_o7KdA&callback=initMap" async defer></script>
 
-	<script type='text/javascript' src="http://cdnjs.cloudflare.com/ajax/libs/jquery-ajaxtransport-xdomainrequest/1.0.1/jquery.xdomainrequest.min.js"></script>
-
-	<!-- Smartsupp Live Chat script -->
+	<!-- Start of Smartsupp Live Chat script -->
 	<script type="text/javascript">
 		var _smartsupp = _smartsupp || {};
 		_smartsupp.key = '0b0c8963ec8e2cec86be95b00c8129dd5f1f4a1d';
@@ -683,6 +703,5 @@
 		ga('create', 'UA-80892385-1', 'auto');
 		ga('send', 'pageview');
 	</script>
-
 </body>
 </html>

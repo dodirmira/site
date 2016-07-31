@@ -47,15 +47,30 @@
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
   </PropertyGroup>
   <ItemGroup>
-    <Content Include="images\gallery\IMG_9418 03.jpg" />
-    <Content Include="images\gallery\IMG_9433 03.jpg" />
-    <Content Include="images\gallery\IMG_9522 05.jpg" />
-    <Content Include="images\gallery\Peskiri i svece 002.jpg" />
-    <Content Include="images\gallery\Peskiri i svece 003.jpg" />
+    <Content Include="images\gallery\1.jpg" />
+    <Content Include="images\gallery\10.jpg" />
+    <Content Include="images\gallery\11.jpg" />
+    <Content Include="images\gallery\2.jpg" />
+    <Content Include="images\gallery\3.jpg" />
+    <Content Include="images\gallery\4.jpg" />
+    <Content Include="images\gallery\5.jpg" />
+    <Content Include="images\gallery\6.jpg" />
+    <Content Include="images\gallery\7.jpg" />
+    <Content Include="images\gallery\8.jpg" />
+    <Content Include="images\gallery\9.jpg" />
     <Content Include="images\header-background.jpg" />
-    <Content Include="images\newage.png" />
-    <Content Include="images\quote_64px.png" />
-    <Content Include="images\stefan.png" />
+    <Content Include="images\massages\ayurveda.jpg" />
+    <Content Include="images\massages\new-age.jpg" />
+    <Content Include="images\massages\sportska.jpg" />
+    <Content Include="images\massages\svedska.jpg" />
+    <Content Include="images\massages\terapeutska.jpg" />
+    <Content Include="images\promotions\couples-massage.jpg" />
+    <Content Include="images\promotions\massage.jpg" />
+    <Content Include="images\promotions\za-redovne.jpg" />
+    <Content Include="images\stefan.jpg" />
+    <Content Include="images\testimonials\1.jpg" />
+    <Content Include="images\testimonials\2.jpg" />
+    <Content Include="images\testimonials\3.jpg" />
     <Content Include="index.html" />
     <Content Include="lib\jquery-2.2.3\jquery.min.js" />
     <Content Include="lib\material-design-icons\css\materialdesignicons.css" />
